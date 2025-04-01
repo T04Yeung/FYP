@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Page Include="HomePage.xaml">
+      <Filter>Front-end</Filter>
+    </Page>
+    <Page Include="RecordPage.xaml">
+      <Filter>Front-end</Filter>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Filter>Front-end</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="MainWindow.idl" />
+    <Midl Include="ShareDataViewModel.idl">
+      <Filter>Front-end</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="graphManagement.cpp">
+      <Filter>Back-end</Filter>
+    </ClCompile>
+    <ClCompile Include="CPU_Algorithm.cpp">
+      <Filter>Back-end</Filter>
+    </ClCompile>
+    <ClCompile Include="fileManagement.cpp">
+      <Filter>Back-end</Filter>
+    </ClCompile>
+    <ClCompile Include="recordManagement.cpp">
+      <Filter>Back-end</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="record.h">
+      <Filter>Back-end</Filter>
+    </ClInclude>
+    <ClInclude Include="recordManagement.h">
+      <Filter>Back-end</Filter>
+    </ClInclude>
+    <ClInclude Include="CPU_Algorithm.h">
+      <Filter>Back-end</Filter>
+    </ClInclude>
+    <ClInclude Include="fileManagement.h">
+      <Filter>Back-end</Filter>
+    </ClInclude>
+    <ClInclude Include="GPU_Algorithm.cuh">
+      <Filter>Back-end</Filter>
+    </ClInclude>
+    <ClInclude Include="graphManagement.h">
+      <Filter>Back-end</Filter>
+    </ClInclude>
+    <ClInclude Include="graph.h">
+      <Filter>Back-end</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{0da2c7df-ccf4-436c-8e75-ecf047290e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Front-end">
+      <UniqueIdentifier>{6a849787-2b27-48de-9302-752ed938a219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Back-end">
+      <UniqueIdentifier>{53ccb649-971f-4e8a-838e-f4f7816c482a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Filter>Front-end</Filter>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="GPU_Algorithm.cu">
+      <Filter>Back-end</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="FYP_V2.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FYP_V2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="FYP_V2">
+
+    <CommandBar>
+        <AppBarToggleButton Icon="Shuffle" Label="Shuffle"/>
+        <AppBarToggleButton Icon="RepeatAll" Label="Repeat"/>
+        <AppBarSeparator/>
+        <AppBarButton Icon="Back" Label="Back"/>
+        <AppBarButton Icon="Stop" Label="Stop"/>
+        <AppBarButton Icon="Play" Label="Play"/>
+        <AppBarButton Icon="Forward" Label="Forward"/>
+
+        <CommandBar.SecondaryCommands>
+            <AppBarButton Label="Like"/>
+            <AppBarButton Label="Dislike"/>
+        </CommandBar.SecondaryCommands>
+
+        <CommandBar.Content>
+            <TextBlock Text="Now playing..." Margin="12,14"/>
+        </CommandBar.Content>
+    </CommandBar>
+</Window>

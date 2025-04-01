@@ -1,0 +1,10 @@
+namespace FYP_V2
+{
+    [bindable]
+    [default_interface]
+    runtimeclass ViewModel 
+    {
+        ViewModel();
+        Int32 MyProperty;
+    }
+}

@@ -1,0 +1,10 @@
+﻿namespace FYP_V2
+{
+    [bindable]
+    [default_interface]
+    runtimeclass ShareDataViewModel
+    {
+        ShareDataViewModel();
+        Int32 MyProperty;
+    }
+}

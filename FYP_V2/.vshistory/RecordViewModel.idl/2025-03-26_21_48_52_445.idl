@@ -1,0 +1,30 @@
+﻿namespace FYP_V2
+{
+    [bindable]
+    [default_interface]
+    runtimeclass RecordViewModel
+    {
+        RecordViewModel();
+        static RecordViewModel Create(
+            Int32 id,
+            String executionDate,
+            Int32 deviceIdx,
+            String deviceName,
+            Int32 algorithmIdx,
+            String algorithmName,
+            Double timeSpend,
+            IVector<String> nodeNameList,
+            String details
+        );
+
+        Int32 Id{ get; };
+        String ExecutionDate{ get; };
+        Int32 DeviceIdx{ get; };
+        String DeviceName{ get; };
+        Int32 AlgorithmIdx{ get; };
+        String AlgorithmName{ get; };
+        Double TimeSpend{ get; };
+        String NodeList{ get; };
+        String Details{ get; };
+    }
+}

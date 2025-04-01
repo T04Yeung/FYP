@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="FYP_V2.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FYP_V2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Stretch">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border x:Name="MenuBarContainer"
+            Grid.Row="0"
+            Margin="5"
+            CornerRadius="8"
+            Background="{ThemeResource SystemControlAcrylicWindowBrush}"
+            VerticalAlignment="Top">    
+            <Border.Shadow>
+                <ThemeShadow />
+            </Border.Shadow>
+            <MenuBar Background="Transparent">
+                <MenuBarItem Title="File">
+                    <MenuFlyoutItem Text="Import Vertices List"/>
+                    <MenuFlyoutItem Text="Import Edges List"/>
+                </MenuBarItem>
+                <MenuBarItem Title="Setting">
+                    <MenuFlyoutSubItem Text="Theme">
+                        <MenuFlyoutItem Text="Light"/>
+                        <MenuFlyoutItem Text="Dark"/>
+                    </MenuFlyoutSubItem>
+                </MenuBarItem>
+            </MenuBar>
+        </Border>
+
+        <Grid
+            Grid.Row="1"
+            Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border x:Name="LeftPanel"
+            Grid.Column="0"
+            Margin="5"
+            CornerRadius="8"
+            Background="{ThemeResource AcrylicInAppFillColorBaseBrush}">    
+                <Border.Shadow>
+                    <ThemeShadow />
+                </Border.Shadow>
+                <TextBlock Text="Graph"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center"/>
+            </Border>
+
+            <Border x:Name="RightPanel"
+            Grid.Column="1"
+            Margin="5"
+            CornerRadius="8"
+            Background="{ThemeResource AcrylicInAppFillColorBaseBrush}">
+                <Border.Shadow>
+                    <ThemeShadow />
+                </Border.Shadow>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Height="50" VerticalAlignment="Top" Margin="20" Text="Algorithm:" FontSize="20" FontFamily="Comic Sans MS"/>
+                    <ComboBox x:Name="algorithmBox" PlaceholderText="== Select Algorithm ==" FontFamily="Comic Sans MS" Grid.Column="1" VerticalAlignment="Top" Margin="0, 20, 0 ,0">
+                        <ComboBoxItem Content="Parallel Dijkstra's Algorithm"/>
+                        <ComboBoxItem Content="2D Partitioning BFS"/>
+                    </ComboBox>
+                </Grid>
+
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

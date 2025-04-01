@@ -1,0 +1,16 @@
+﻿namespace FYP_V2
+{
+    [bindable]
+    [default_interface]
+    runtimeclass RecordViewModel : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        Int32 id{ get; };
+        String executionDate{ get; };
+        Int32 deviceIdx{ get; };
+        String deviceName{ get; };
+        Int32 algorithmIdx{ get; };
+        String algorithmName{ get; };
+        Double timeSpend{ get; };
+        String details{ get; };
+    }
+}

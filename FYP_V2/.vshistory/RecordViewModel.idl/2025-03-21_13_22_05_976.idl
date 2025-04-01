@@ -1,0 +1,16 @@
+﻿namespace FYP_V2
+{
+    [bindable]
+    [default_interface]
+    runtimeclass RecordViewModel
+    {
+        Int32 Id{ get; };
+        String ExecutionDate{ get; };
+        Int32 DeviceIdx{ get; };
+        String DeviceName{ get; };
+        Int32 AlgorithmIdx{ get; };
+        String AlgorithmName{ get; };
+        Double TimeSpend{ get; };
+        String Details{ get; };
+    }
+}

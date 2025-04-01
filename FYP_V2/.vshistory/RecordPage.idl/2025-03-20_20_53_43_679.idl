@@ -1,0 +1,12 @@
+﻿import "RecordViewModel.idl";
+
+namespace FYP_V2
+{
+    [default_interface]
+    runtimeclass RecordPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        RecordPage();
+
+        Windows.Foundation.Collections.IObservableVector<RecordViewModel> Records() { get; };
+    }
+}

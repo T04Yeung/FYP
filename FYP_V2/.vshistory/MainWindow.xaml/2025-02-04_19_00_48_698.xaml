@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="FYP_V2.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FYP_V2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="FYP_V2">
+
+    <Grid>
+        <Border x:Name="MenuBarContainer"
+            Margin="5"
+            CornerRadius="8"
+            Background="{ThemeResource SystemControlAcrylicWindowBrush}"
+            VerticalAlignment="Top">
+            <Border.Shadow>
+                <ThemeShadow />
+            </Border.Shadow>
+            <MenuBar Height="50" VerticalAlignment="Top" Background="Transparent">
+                <MenuBarItem Title="File">
+                    <MenuFlyoutItem Text="Import Vertices List"/>
+                    <MenuFlyoutItem Text="Import Edges List"/>
+                </MenuBarItem>
+                <MenuBarItem Title="Setting">
+                    <MenuFlyoutSubItem Text="Theme">
+                        <MenuFlyoutItem Text="Light"/>
+                        <MenuFlyoutItem Text="Dark"/>
+                    </MenuFlyoutSubItem>
+                </MenuBarItem>
+            </MenuBar>
+        </Border>
+    </Grid>
+</Window>
