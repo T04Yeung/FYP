@@ -53,6 +53,8 @@ void getNodesPosition(int** adjMatrix, const int& numOfVertices) {
     const int canvasWidth = 8000;
     const int canvasHeight = 5500;
 
+	nodePositions.clear();
+
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<> disW(100.0, canvasWidth - 100.0);
