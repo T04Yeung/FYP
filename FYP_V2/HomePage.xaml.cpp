@@ -136,11 +136,12 @@ winrt::fire_and_forget winrt::FYP_V2::implementation::HomePage::ShowMessage(hstr
 void winrt::FYP_V2::implementation::HomePage::ImportVertices(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
 {
     if (!currentNodes.empty()) {
-		currentNodes.clear();
-        currentEdges.clear();
-		nodePositions.clear();
-		GraphCanvas().Children().Clear();
-		GraphBtnPanel().Visibility(Visibility::Collapsed);
+	currentNodes.clear();
+	currentEdges.clear();
+	nodePositions.clear();
+    	SharedData::getInstance().totalSnapshots = 0;
+	GraphCanvas().Children().Clear();
+	GraphBtnPanel().Visibility(Visibility::Collapsed);
     }
 
     std::string filename = fileFunctions::OpenFileDialog();
