@@ -1,4 +1,4 @@
-Setup Instruction:
+Executable file launch instruction:
 1. Please ensure that your GPU support CUDA
    
 2. Download zip file: https://drive.google.com/file/d/1XNZooSWe1hmi5jNdTW5FhytThnQEvIDP/view?usp=sharing
