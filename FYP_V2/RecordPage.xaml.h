@@ -46,7 +46,7 @@ public:
             return false;
         }
 
-        if (algorithmIdx != 3 && algorithmIdx != record.getAlgorithmIdx()) {
+        if (algorithmIdx != 5 && algorithmIdx != record.getAlgorithmIdx()) {
             return false;
         }
 
