@@ -108,8 +108,6 @@ std::unordered_set<Edge> fileFunctions::readEdgeFile(std::ifstream& edgeFile, st
         std::vector<std::string> row = readCSVFileLine(line);
         Edge edge;
 
-        if (row.size() > 2) continue;
-
         auto fromIter = nodeNameToId.find(row[0]);
         auto toIter = nodeNameToId.find(row[1]);
 
